@@ -13,7 +13,7 @@ float C[25] = {0.001, 0.0015, 0.0022, 0.0033, 0.0047, 0.0068, 0.01, 0.015, 0,022
 float voltageMax = 150.0; //Voltage rating of Capacitor, this is the voltage capacitor able to alive
 float currentMin = 0.011; // Minimum current pass through the circuit
 float currentMax = 0.05; // Maximum current pass through the circuit
-float powerRate = 0.25; // Power rating of Resistor, this is the power resistor able to alive
+float powerRate = 0.15; // Power rating of Resistor, this is the power resistor able to alive
 float inputVoltage = 320.0; // Vin
 
 //This function is used to calculate current pass through the circuit
