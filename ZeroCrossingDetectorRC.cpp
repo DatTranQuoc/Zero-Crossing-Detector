@@ -48,8 +48,12 @@ int main()
                     if (voltageC(i, current(i, C[j])) < voltageMax){
                         std::cout <<"R = "<<i;
                         std::cout <<"\n";
+                        std::cout <<"Power on R = "<<powerR(i, current(i, C[j]));
+                        std::cout <<"\n";
                         std::cout <<"C = "<<C[j];
-                        std::cout <<"\n\n";   
+                        std::cout <<"\n";   
+                        std::cout <<"Voltage on C = "<<voltageC(i, current(i, C[j]));
+                        std::cout <<"\n\n";
                     }
                 }
             }
