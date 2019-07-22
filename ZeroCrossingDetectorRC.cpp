@@ -11,7 +11,7 @@ int Rmax = 100000; // resistor value maximum
 // Capacitor values
 float C[25] = {0.001, 0.0015, 0.0022, 0.0033, 0.0047, 0.0068, 0.01, 0.015, 0,022, 0.033, 0.047, 0.068, 0.1, 0.15, 0.22, 0.33, 0.47, 0.68, 1.0, 1.5, 2.2, 3.3, 4.7, 6.8};
 float voltageMax = 150.0; //Voltage rating of Capacitor, this is the voltage capacitor able to alive
-float currentMin = 0.011; // Minimum current pass through the circuit
+float currentMin = 0.005; // Minimum current pass through the circuit
 float currentMax = 0.05; // Maximum current pass through the circuit
 float powerRate = 0.15; // Power rating of Resistor, this is the power resistor able to alive
 float inputVoltage = 320.0; // Vin
@@ -21,7 +21,7 @@ float inputVoltage = 320.0; // Vin
 // Output: current value in float type
 //
 float current(int R, float C){
-    return (inputVoltage/(1/(2*3.14*50*C*0.000001) + R));
+    return (inputVoltage/(2*(1/(2*3.14*50*C*0.000001)) + 2*R));
 }
 
 //This function is used to calculate current pass through the circuit
